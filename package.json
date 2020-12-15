@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/parthdevloper/skyzen-developers-project/issues"
   },
-  "homepage": "https://github.com/parthdevloper/skyzen-developers-project#readme"
+  "homepage": "https://github.com/parthdevloper/skyzen-developers-project#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
 }

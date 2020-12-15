@@ -1,0 +1,167 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1600px;
+	 height: 7454px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1600px;
+	 height: 7454px;
+	 z-index:1;
+} 
+
+ #banner 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1600px;
+	 height: 820px;
+	 z-index:2;
+} 
+
+ #header 
+{ 
+	 left: -124px; 
+	 top: -10px; 
+	 position: absolute; 
+	 width: 1848px;
+	 height: 224px;
+	 z-index:3;
+} 
+
+ #form 
+{ 
+	 left: 1015px; 
+	 top: 564px; 
+	 position: absolute; 
+	 width: 363px;
+	 height: 450px;
+	 z-index:4;
+} 
+
+ #aboutus 
+{ 
+	 left: 120px; 
+	 top: 1048px; 
+	 position: absolute; 
+	 width: 1266px;
+	 height: 632px;
+	 z-index:5;
+} 
+
+ #Ourcertificates 
+{ 
+	 left: 200px; 
+	 top: 1765px; 
+	 position: absolute; 
+	 width: 1200px;
+	 height: 541px;
+	 z-index:6;
+} 
+
+ #banner2 
+{ 
+	 left: -4px; 
+	 top: 2068px; 
+	 position: absolute; 
+	 width: 1608px;
+	 height: 866px;
+	 z-index:7;
+} 
+
+ #ourproject 
+{ 
+	 left: 150px; 
+	 top: 2934px; 
+	 position: absolute; 
+	 width: 1280px;
+	 height: 1128px;
+	 z-index:8;
+} 
+
+ #testimonial 
+{ 
+	 left: 174px; 
+	 top: 4178px; 
+	 position: absolute; 
+	 width: 1252px;
+	 height: 407px;
+	 z-index:9;
+} 
+
+ #latestblogs 
+{ 
+	 left: 0px; 
+	 top: 4670px; 
+	 position: absolute; 
+	 width: 1600px;
+	 height: 651px;
+	 z-index:10;
+} 
+
+ #ourgallery 
+{ 
+	 left: 200px; 
+	 top: 5439px; 
+	 position: absolute; 
+	 width: 1200px;
+	 height: 834px;
+	 z-index:11;
+} 
+
+ #contactus 
+{ 
+	 left: 0px; 
+	 top: 6393px; 
+	 position: absolute; 
+	 width: 1600px;
+	 height: 831px;
+	 z-index:12;
+} 
+
+ #footer 
+{ 
+	 left: 0px; 
+	 top: 7209px; 
+	 position: absolute; 
+	 width: 1600px;
+	 height: 245px;
+	 z-index:13;
+} 
+
+ #livechat 
+{ 
+	 left: 1190px; 
+	 top: 1452px; 
+	 position: absolute; 
+	 width: 452px;
+	 height: 438px;
+	 z-index:14;
+} 
+
+ #Ellipse1copy 
+{ 
+	 left: 91px; 
+	 top: 904px; 
+	 position: absolute; 
+	 width: 100px;
+	 height: 220px;
+	 z-index:15;
+} 
