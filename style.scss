@@ -16,11 +16,36 @@
    top: -20px;
 }
 
-img.gallery-image {
-   border-radius: 10%;
+.gallery-image {
+   border-radius:22px !important;
 }
-
-
+.view-other{
+  background-color: #479FCF;
+  font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+  font-size: 18px;
+  color: #fff;
+}
+.blog-bg{
+   height: 652px;
+   background-color: #F2F2F2;
+   .blog-title{
+      margin-bottom: 70px;
+      padding-top: 70px;
+   }
+}
+.map-bg{
+   height: 832px;
+   background-color: #E5E5E5;
+   position: relative;
+   .contact-us-section{
+      position: absolute;
+      top: 20%;
+      bottom: 0;
+   }
+}
+.rounded{
+   border-radius: 6px;
+}
 .test {
    height: 500px;
    width: 500px;
@@ -106,234 +131,227 @@ img.gallery-image {
    right: -16px;
 }
 
-// alok -------------------------------------------------------------------------------------
+// alok
 
 
+html,body{
+  height: 100%;
+  width: 100%;
+}
 .welcome-banner {
-   background-image: url(./assets/Slider/1.jpg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 700px;
-   width: 100%;
-   border-bottom-left-radius: 20%;
-   border-bottom-right-radius: 20%;
-
-   .welcome-text {
-      width: 800px;
-      position: relative;
-      left: 206px;
-      top: 390px;
-
-      h1 {
-         color: #fff;
-         font-family: Algerian, AdobeInvisFont, MyriadPro-Regular;
-         font-size: 55px;
+  background-image: url(./assets/Slider/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  .welcome-text {
+    width: 800px;
+    position: relative;
+    left: 206px;
+    top: 390px;
+    h1 {
+      color: #fff;
+      font-family: Algerian, AdobeInvisFont, MyriadPro-Regular;
+      font-size: 55px;
+    }
+    .buttons {
+      .btn {
+        background-color: #479fcf;
+        color: #fff;
+        text-transform: uppercase;
       }
-
-      .buttons {
-         .btn {
-            background-color: #479fcf;
-            color: #fff;
-            text-transform: uppercase;
-         }
-
-         .btn-start {
-            width: 293px;
-         }
-
-         .btn-download {
-            width: 339px;
-            margin-left: 19px;
-         }
+      .btn-start {
+        width: 293px;
       }
-   }
-
-   .form-question {
-      width: 312px;
-      height: 380px;
-      position: relative;
-      left: 1040px;
-      top: 303px;
-      text-align: center;
-
-      .any-question {
-         font-size: 30px;
-         font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
+      .btn-download {
+        width: 339px;
+        margin-left: 19px;
       }
-
-      .question-input {
-         margin-bottom: 17px;
-      }
-
-      .question-textarea {
-         margin-bottom: 30px;
-      }
-
-      button[type="submit"] {
-         background-color: #479FCF;
-         text-transform: uppercase;
-         font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-         font-size: 18px;
-         color: #fff;
-      }
-   }
+    }
+  }
+  .form-question{
+    width: 312px;
+    height: 380px;
+    position: relative;
+    left: 1040px;
+    top: 303px;
+    text-align: center;
+    .any-question{
+      font-size: 30px;
+      font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+    }
+    .question-input{
+      margin-bottom: 17px;
+    }
+    .question-textarea{
+      margin-bottom: 30px;
+    }
+    button[type="submit"]{
+      background-color: #479FCF;
+      text-transform: uppercase;
+      font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
 }
 
 
 // content
-.content-about {
-   margin-top: 266px;
-
-   .about-title {
-      font-size: 40px;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-      margin-top: 46px;
-      margin-bottom: 29px;
-   }
-
-   .about-text {
-      font-family: Montserrat-Regular, AdobeInvisFont, MyriadPro-Regular;
-      font-size: 18px;
-      opacity: 0.8;
-      margin-bottom: 49px;
-   }
-
-   button {
-      background-color: #479FCF;
-      text-transform: uppercase;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-      font-size: 18px;
-      color: #fff;
-   }
+.content-about{
+margin-top: 266px;
+.about-title{
+  font-size: 40px;
+  font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+  margin-top: 46px;
+  margin-bottom: 29px;
 }
-
-.about-img-container {
-   position: relative;
-   height: 598px;
-
-   .about-img {
-      width: 586px;
-      height: 451px;
-      border-radius: 6px;
-   }
-
-   .project-img-2 {
-      width: 252px;
-      position: absolute;
-      height: 253px;
-      bottom: 0;
-      right: 0;
-      border-radius: 6px;
-   }
+.about-text{
+  font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 49px;
+}
+ button{
+    background-color: #479FCF;
+    text-transform: uppercase;
+    font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.about-img-container{
+  position: relative;
+  height: 598px;
+  
+  .about-img{
+    width: 586px;
+    height: 451px;
+    border-radius: 6px;
+  }
+  .project-img-2{
+    width: 252px;
+    position: absolute;
+    height: 253px;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+  }
 }
 
 
 // award
-.award {
-   margin-top: 80px;
-
-   .award-title {
-      font-size: 40px;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-   }
-
-   .award-img {
-      height: 351px;
-      width: 279px;
-      border-radius: 6px;
-   }
+.award{
+  margin-top: 80px;
+  .award-title{
+  font-size: 40px;
+  font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+} 
+  .award-img{
+    height: 351px;
+    width: 279px;
+    border-radius: 6px;
+  } 
 }
 
 // getstarter banner
-.get-starter-banner {
-   // background-image: url(./assets/Other-Home-Page-Image/banner_2.jpg) ;
-   background: linear-gradient(0deg, rgba(#479FCF, 0.9), rgba(#479FCF, 0.9)), url(./assets/Other-Home-Page-Image/banner_2.jpg);
+.get-starter-banner{
+  // background-image: url(./assets/Other-Home-Page-Image/banner_2.jpg) ;
+  background:linear-gradient(0deg, rgba(#479FCF, 0.9), rgba(#479FCF, 0.9)), url(./assets/Other-Home-Page-Image/banner_2.jpg);
    background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 377px;
-   width: 100%;
-   position: relative;
-   text-align: center;
-   margin-top: 122px;
-
-   .banner-text {
-      margin: auto 391px;
-      padding-top: 150px;
-
-      h2 {
-         font-size: 40px;
-         font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-         color: #fff;
-      }
-
-      p {
-         color: #fff;
-         opacity: 0.5019607843137255;
-         font-family: Montserrat-Regular, AdobeInvisFont, MyriadPro-Regular;
-         font-size: 18px;
-      }
-   }
-}
-
-.project {
-   margin-top: 130px;
-
-   .project-title {
-      font-size: 30px;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-   }
-
-   .project-text {
-      font-size: 16px;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-      opacity: 0.8;
-   }
-
-   .btn-more {
-      background-color: #479FCF;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-      font-size: 18px;
-      color: #fff;
-      margin-right: 15px;
-   }
-
-   .project-location {
-      font-size: 18px;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-      opacity: 0.9019607843137255;
-   }
-
-   .projec-img-1 {
-      text-align: right;
-      height: 451px;
-      width: 586px;
-   }
-}
-
-// client
-.client {
-   position: relative;
-   margin-top: 125px;
-
-   .client-title {
-      margin-bottom: 96px;
-      font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 377px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 122px;
+  .banner-text{
+    margin: auto 391px;
+    padding-top: 150px;
+    h2{
       font-size: 40px;
-   }
+      font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+      color: #fff;
+    }
+    p{
+      color: #fff;
+      opacity: 0.5019607843137255;
+      font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+      font-size: 18px;
+    }
+  }
+}
 
-   .avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      overflow: hidden;
-      position: absolute;
-      top: -50px;
-      left: -5px;
-   }
-
-   .client-comment {
-      margin-left: 110px;
-   }
+.project{
+  margin-top: 130px;
+  
+  .project-title{
+    font-size: 30px;
+    font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+  }
+  .project-text{
+    font-size: 16px;
+     font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+    opacity: 0.8;
+  }
+  .btn-more{
+    background-color: #479FCF;
+    font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 15px;
+  }
+  .project-location{
+    font-size: 18px;
+    font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+    opacity: 0.9019607843137255;
+  }
+  .projec-img-1{
+    text-align:right;
+    height: 451px;
+    width: 586px;
+  }
+}
+// client
+.client{
+  position: relative;
+  margin-top: 125px;
+  .client-title{
+    margin-bottom: 96px;
+    font-family: Montserrat-Bold,AdobeInvisFont,MyriadPro-Regular;
+    font-size: 40px;
+  }
+  .avatar{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   overflow: hidden;
+   position: absolute;
+    top: -50px;
+    left: -5px;
+  }
+  .client-comment{
+    margin-left: 110px;
+  }
+}
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    .swiper-slide{
+      
+      .card{
+        margin: 50px 0; 
+        width: 586px;
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+      &::after{
+        font-size: 30px;
+      }
+    }
 }
