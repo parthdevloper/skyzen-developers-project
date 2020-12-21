@@ -1,0 +1,185 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat-Regular', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+// active link
+.nav-link {
+  &.active {
+    color: #fff !important;
+  }
+}
+
+.btn-theme {
+  background-color: #479FCF;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.theme-text {
+  color: #479FCF;
+  font-size: 18px;
+}
+
+.theme-border-color {
+  border: 2px solid #479FCF;
+}
+
+// text ellipsis
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// footer
+.footer-link {
+  color: #000;
+}
+
+.navbar {
+  background-color: #4091AF;
+
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        margin: 0 1rem;
+
+        .nav-link {
+          font-size: 16px;
+          color: #000;
+        }
+
+        &.active {
+          .nav-link {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    outline: none;
+    font-size: 1.4rem;
+  }
+}
+
+.logo-container {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background-color: #fff;
+
+  .social-link {
+    height: 40px;
+    position: relative;
+    align-items: center;
+    z-index: 999;
+
+    .contact-number {
+      margin-left: 40%;
+      font-size: 18px;
+      font-family: 'Montserrat-SemiBold', 'fontello', 'AdobeInvisFont', 'MyriadPro-Regular';
+      color: #000000;
+    }
+
+    .social-apps {
+      margin-right: 3rem;
+      padding: 0 10px;
+
+      img {
+        margin: auto 15px;
+      }
+    }
+  }
+
+  .logo-wraper {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 60px;
+    top: -62px;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    background-color: #fff;
+    z-index: 0;
+    transform: scaleX(1.5);
+
+    .logo {
+      height: 134px;
+      width: 130px;
+      position: relative;
+      top: 81px;
+      left: 40px;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+  }
+
+  .link-contact {
+    z-index: 999;
+    position: relative;
+  }
+}
+
+
+// Media Query
+@media(max-width:990px) {
+  .logo-container {
+    .social-link {
+      .contact-number {
+        margin-left: 0;
+      }
+    }
+
+    .logo-wraper {
+      left: calc(50% - 120px);
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .social-link {
+
+    .social-apps {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    .social-apps {
+      padding: 0 10px;
+
+      img {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width:450px) {
+  .logo-container {
+
+    .social-apps {
+      img {
+        margin: 0 5px !important;
+      }
+    }
+  }
+}

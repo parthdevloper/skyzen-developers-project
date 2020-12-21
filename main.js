@@ -1,5 +1,16 @@
 $(function () {
 
+   // active menu
+   var path = window.location.href;
+   $('.navbar-nav .nav-link').each(function () {
+      if (this.href === path) {
+         $(this).addClass('active').siblings().removeClass('active');
+      }
+   });
+   $('.navbar-nav .nav-link').on('click', function (e) {
+      $(this).addClass('active').siblings().removeClass('active');
+   })
+
    // gallery img load
    $('#loadMore').on('click', function () {
       $(".load-images-here").html(`<div class="col-12">
@@ -101,5 +112,6 @@ $(function () {
          $('.chat-box').addClass('d-none')
       }
    })
+
 });
 

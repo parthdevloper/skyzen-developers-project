@@ -1,0 +1,53 @@
+.nri-desc h4 {
+  font-family: 'Montserrat-Bold';
+  font-size: 30px;
+  color: #202020;
+  margin-bottom: 2rem;
+}
+
+.nri-desc h4 i {
+  color: #67CEFD;
+}
+
+.nri-desc p {
+  font-size: 18px;
+  color: rgba(32, 32, 32, 0.8);
+}
+
+.nri-desc h6 {
+  font-family: 'Montserrat-Bold';
+  font-size: 26px;
+  color: #202020;
+}
+
+.nri-banner {
+  height: 301px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background: url(../assets/about_us/banner_about.png);
+  position: relative;
+  margin-bottom: 118px;
+}
+
+.nri-banner::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #200303;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.nri-banner .banner-text {
+  z-index: 5;
+  color: #fff;
+  font-size: 55px;
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.footer {
+  background-color: #F5F3F3;
+}
+/*# sourceMappingURL=nri.css.map */

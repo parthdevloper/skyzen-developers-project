@@ -1,0 +1,82 @@
+.current-banner {
+  height: 301px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background: url(../assets/about_us/banner_about.png);
+  position: relative;
+  margin-bottom: 118px;
+}
+
+.current-banner::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #200303;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.current-banner .banner-text {
+  z-index: 5;
+  color: #fff;
+  font-size: 55px;
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.specialities-banner {
+  background-color: #F2F2F2;
+  padding: 3rem;
+}
+
+.specialities-banner .heading {
+  font-family: 'Montserrat-Bold';
+  font-size: 30px;
+}
+
+.specialities-banner .heading + ul li {
+  color: rgba(32, 32, 32, 0.8);
+  font-size: 18px;
+}
+
+.yoga-zone {
+  margin-top: 121px;
+}
+
+.yoga-zone .heading {
+  font-family: 'Montserrat-Bold';
+  font-size: 30px;
+  color: #202020;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.certificates {
+  padding: 70px 0;
+  margin-top: 20px;
+}
+
+.certificates .heading {
+  margin-bottom: 70px;
+  font-size: 30px;
+  font-family: 'Montserrat-Bold';
+}
+
+.certificates .certy-name {
+  font-family: 'Montserrat-SemiBold';
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.status .heading {
+  font-size: 30px;
+  font-family: 'Montserrat-Bold';
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.footer {
+  background-color: #F5F3F3;
+}
+/*# sourceMappingURL=current-project.css.map */

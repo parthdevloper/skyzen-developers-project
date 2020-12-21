@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Home Page</title>
 </head>
@@ -34,7 +35,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-xl navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,14 +43,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Projects</a>
+              <a class="nav-link" href="gallery.html">Our Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Dholera SIR</a>
@@ -106,8 +107,8 @@
         <h1 class="text-uppercase">Welcome To Dholera </h1>
         <h1 class="text-uppercase">Greenfield Smartcity</h1>
         <div class="buttons d-flex flex-wrap">
-          <button type="button" class="btn btn-lg btn-start mt-2">Get Started now</button>
-          <button type="button" class="btn btn-lg btn-download mt-2">download brochure</button>
+          <a href="#started" type="button" class="btn btn-lg btn-start mt-2">Get Started now</a>
+          <a href="#" type="button" class="btn btn-lg btn-download mt-2">download brochure</a>
         </div>
       </div>
     </div>
@@ -205,7 +206,7 @@
   <!-- getstarted -->
   <div class="container-fluid get-starter-banner">
     <div class="banner-text">
-      <h2>Get started with us</h2>
+      <h2 id="started">Get started with us</h2>
       <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
         Latin
         literature from 45 BC, making it over 2000 years old.</p>
@@ -388,7 +389,7 @@
         <div class="row p-4">
           <div class="col-12 col-lg-6">
             <iframe class="shadow"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7997.600434402135!2d10.757409430595589!3d59.92550277249469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6e4827b671%3A0xc7d98787d5beaaf0!2sAlexander%20Kiellands%20plass!5e0!3m2!1sen!2sin!4v1608401875637!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.560163497672!2d72.14388731425261!3d21.758570985607527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5a7740293a67%3A0x4669c49c48611fdb!2sSkyzen%20Developers!5e0!3m2!1sen!2sin!4v1608529841246!5m2!1sen!2sin"
               width="100%" height="500" frameborder="0" style="border:0; border-radius: 6px;" allowfullscreen=""
               aria-hidden="false" tabindex="0"></iframe>
           </div>
@@ -430,35 +431,37 @@
   </div>
 
   <!-- footer -->
-  <div class="container">
-    <div class="footer-section pt-4">
-      <div class="row">
-        <div class="col-6 col-lg-5 col-md-4">
-          <img src="./assets/skyzen_developers.jpg" width="180" alt="">
-        </div>
-        <div class="col-6 col-lg-7 col-md-8  d-flex align-items-center justify-content-center">
-          <div class="row flex-column flex-md-row text-center">
-            <div class="col text-nowrap"><a class="footer-link" href="#">Home</a></div>
-            <div class="col text-nowrap"><a class="footer-link" href="#">About us</a></div>
-            <div class="col text-nowrap"><a class="footer-link" href="#">Our Projects</a></div>
-            <div class="col text-nowrap"><a class="footer-link" href="#">Dholera SIR</a></div>
-            <div class="col text-nowrap"><a class="footer-link" href="#">NRI</a></div>
-            <div class="col text-nowrap"><a class="footer-link" href="#">News</a></div>
-            <div class="col text-nowrap"><a class="footer-link" href="#">Career</a></div>
+  <div class="container-fluid footer">
+    <div class="container">
+      <div class="footer-section pt-4">
+        <div class="row">
+          <div class="col-6 col-lg-5 col-md-4">
+            <img src="./assets/logo-transparent.png" width="180" alt="logo">
+          </div>
+          <div class="col-6 col-lg-7 col-md-8  d-flex align-items-center justify-content-center">
+            <div class="row flex-column flex-md-row text-center">
+              <div class="col text-nowrap"><a class="footer-link" href="#">Home</a></div>
+              <div class="col text-nowrap"><a class="footer-link" href="#">About us</a></div>
+              <div class="col text-nowrap"><a class="footer-link" href="#">Our Projects</a></div>
+              <div class="col text-nowrap"><a class="footer-link" href="#">Dholera SIR</a></div>
+              <div class="col text-nowrap"><a class="footer-link" href="#">NRI</a></div>
+              <div class="col text-nowrap"><a class="footer-link" href="#">News</a></div>
+              <div class="col text-nowrap"><a class="footer-link" href="#">Career</a></div>
+            </div>
           </div>
         </div>
-      </div>
-      <hr>
-      <div class="row d-flex justify-content-between">
-        <p class="text-muted pl-3">© 2020 SkyZen Developers</p>
+        <hr>
+        <div class="row d-flex justify-content-between">
+          <p class="text-muted pl-3">© 2020 SkyZen Developers</p>
 
-        <div class="float-right">
-          <img src="./assets/social-icons/wa.png" class="pr-2" width="37" alt="">
-          <img src="./assets/social-icons/fb.png" class="pr-2" width="37" alt="">
-          <img src="./assets/social-icons/tw.png" class="pr-2" width="37" alt="">
-          <img src="./assets/social-icons/ln.png" class="pr-2" width="37" alt="">
+          <div class="float-right">
+            <img src="./assets/social-icons/wa.png" class="pr-2" width="37" alt="">
+            <img src="./assets/social-icons/fb.png" class="pr-2" width="37" alt="">
+            <img src="./assets/social-icons/tw.png" class="pr-2" width="37" alt="">
+            <img src="./assets/social-icons/ln.png" class="pr-2" width="37" alt="">
+          </div>
+
         </div>
-
       </div>
     </div>
   </div>

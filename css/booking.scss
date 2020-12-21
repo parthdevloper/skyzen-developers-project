@@ -1,0 +1,37 @@
+.booking-banner {
+  height: 301px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background: url(../assets/about_us/banner_about.png);
+  position: relative;
+  margin-bottom: 118px;
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #200303;
+    opacity: 0.7;
+    z-index: 0;
+  }
+
+  .banner-text {
+    z-index: 5;
+    color: #fff;
+    font-size: 55px;
+    font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  }
+
+}
+
+.footer {
+  background-color: #F5F3F3;
+}
+
+.booking-table {
+  .plot-no {
+    background-color: #4091AF;
+  }
+}
