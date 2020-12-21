@@ -1,0 +1,417 @@
+.about-banner {
+  height: 301px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background: url(../assets/about_us/banner_about.png);
+  position: relative;
+  margin-bottom: 161px;
+}
+
+.about-banner::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #200303;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.about-banner .banner-text {
+  z-index: 5;
+  color: #fff;
+  font-size: 55px;
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.about-title {
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+.about-desc {
+  color: #202020;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.singature {
+  font-size: 22px;
+  color: #202020;
+}
+
+.singature + small {
+  font-size: 18px;
+  color: #202020;
+  opacity: 0.6;
+}
+
+.experiance-banner {
+  height: 301px;
+  background-color: #3BC2FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.experiance-banner h1 {
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-size: 40px;
+  color: #fff;
+}
+
+.experiance-banner h1 .year {
+  font-size: 68px;
+}
+
+.choose-us {
+  margin-top: 124px;
+}
+
+.choose-us .choose-us-heading {
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-size: 40px;
+}
+
+.choose-us .choose-card {
+  margin: 2rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.choose-us .choose-card .card-body {
+  padding-left: 55px;
+}
+
+.choose-us .choose-card .choose-title {
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.choose-us .choose-card .choose-title:hover::after, .choose-us .choose-card .choose-title:active::after, .choose-us .choose-card .choose-title:focus::after {
+  width: 90%;
+  left: 5%;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+.choose-us .choose-card .choose-title::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  height: 2px !important;
+  width: 40%;
+  left: 30%;
+  background-color: #000;
+  opacity: 0.5;
+  -webkit-transition: 0.4s ease-out all .1s;
+  transition: 0.4s ease-out all .1s;
+}
+
+.choose-us .choose-card .choose-desc {
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.choose-us .choose-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.choose-us .choose-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.choose-us .choose-card:hover .choose-number {
+  background-color: #67CEFD;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.choose-us .choose-card:hover .choose-number span {
+  color: #fff;
+  opacity: 1;
+}
+
+.choose-us .choose-card:hover::before {
+  -webkit-animation: animate 1s linear forwards;
+          animation: animate 1s linear forwards;
+}
+
+.choose-us .choose-card:hover::after {
+  -webkit-animation: animates 1s linear forwards;
+          animation: animates 1s linear forwards;
+}
+
+.choose-us .choose-number {
+  height: 81px;
+  width: 81px;
+  position: absolute;
+  left: -37px;
+  bottom: 33%;
+  background-color: #D3D3D3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.choose-us .choose-number span {
+  font-size: 30px;
+  opacity: 0.5;
+  font-family: 'Roboto-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.our-mission {
+  padding: 70px;
+  background-color: rgba(59, 194, 255, 0.1);
+}
+
+.our-mission .mission-heading {
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-size: 40px;
+  margin-bottom: 66px;
+}
+
+.our-mission .mission-title {
+  font-size: 24px;
+  font-family: 'Montserrat-SemiBold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  margin-bottom: 40px;
+}
+
+.our-mission .mission-desc {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.our-vision {
+  margin-top: 117px;
+}
+
+.our-vision .vision-heading {
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-size: 40px;
+  margin-bottom: 66px;
+}
+
+.our-vision .mission-title {
+  font-size: 24px;
+  font-family: 'Montserrat-SemiBold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  margin-bottom: 40px;
+}
+
+.our-vision .mission-desc {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.teams {
+  margin-top: 125px;
+}
+
+.teams .teams-heading {
+  margin-bottom: 69px;
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.teams .teams-card {
+  overflow: hidden;
+}
+
+.teams .team-description {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -23px;
+  right: 0;
+  width: 90%;
+  opacity: 0;
+  z-index: 1;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.teams .team-description h4 {
+  font-family: 'Montserrat-SemiBold';
+  font-size: 30px;
+  color: #fff;
+}
+
+.teams .team-description p {
+  font-size: 18px;
+  font-family: 'Montserrat-SemiBold';
+  color: #fff;
+}
+
+.teams .team-description .social-links a {
+  font-size: 30px;
+  color: #fff;
+}
+
+.teams .team-description:hover {
+  opacity: 1;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: translate3d(12px, 0px, 0px);
+          transform: translate3d(12px, 0px, 0px);
+  background-color: rgba(59, 194, 255, 0.5);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #67CEFD;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #67CEFD;
+    border-right-color: #67CEFD;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #67CEFD;
+    border-right-color: #67CEFD;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #67CEFD;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #67CEFD;
+    border-right-color: #67CEFD;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #67CEFD;
+    border-right-color: #67CEFD;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@-webkit-keyframes animates {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #67CEFD;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #67CEFD;
+    border-left-color: #67CEFD;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #67CEFD;
+    border-left-color: #67CEFD;
+  }
+}
+
+@keyframes animates {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #67CEFD;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #67CEFD;
+    border-left-color: #67CEFD;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #67CEFD;
+    border-left-color: #67CEFD;
+  }
+}
+/*# sourceMappingURL=about.css.map */

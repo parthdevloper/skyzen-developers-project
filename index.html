@@ -7,25 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
-    rel="stylesheet">
+  <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Home Page</title>
 </head>
 
 <body>
+
+  <!-- welcome -->
   <div class="container-fluid">
-    <div class="logo">
+    <div class="logo-container">
       <div class="social-link">
         <div class="logo-wraper">
-          <img src="./assets/ei_1594724452197-removebg.png" class="logo" alt="">
+          <img src="./assets/skyzen_developers.jpg" class="logo" alt="logo">
         </div>
-        <div class="d-flex align-items-center  justify-content-between h-100">
-          <span class="contact-number mr-md-4"><strong><i class='bx bx-phone'></i></strong>+91 851 111 5720</span>
+        <div class="link-contact d-flex align-items-center  justify-content-between h-100 px-2">
+          <span class="contact-number mr-md-4"><i class='bx bx-phone align-middle'></i>+91 851 111 5720</span>
           <div class="social-apps">
             <img src="./assets/social-icons/wa.png" height="25" width="25" alt="">
             <img src="./assets/social-icons/fb.png" height="25" width="25" alt="">
@@ -38,15 +38,15 @@
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="bx bx-menu"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="about.html">About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Our Projects</a>
@@ -71,40 +71,83 @@
       </nav>
     </div>
 
-    <div class="welcom-banner">
+    <div class="welcome-banner">
+      <div class="swiper-container welcome-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./assets/slider/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/slider/2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/slider/3.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/slider/4.png" alt="" class="img-fluid">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/slider/5.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
       <div class="welcome-text">
         <h1 class="text-uppercase">Welcome To Dholera </h1>
         <h1 class="text-uppercase">Greenfield Smartcity</h1>
         <div class="buttons d-flex flex-wrap">
-          <button type="button" class="btn btn-lg btn-start mt-1">Get Started now</button>
-          <button type="button" class="btn btn-lg btn-download mt-1">download brochure</button>
+          <button type="button" class="btn btn-lg btn-start mt-2">Get Started now</button>
+          <button type="button" class="btn btn-lg btn-download mt-2">download brochure</button>
         </div>
       </div>
-      <div class="card form-question shadow">
-        <div class="card-body">
-          <h6 class="text-center">Any Question</h6>
-          <form>
-            <div class="form-group question-input">
-              <input type="text" class="form-control form-control-sm" placeholder="Name*" aria-describedby="name">
+    </div>
+    <div class="card form-question shadow">
+      <div class="card-body">
+        <h6 class="any-question text-center">Any Question</h6>
+        <form>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="form-group question-input">
+                <input type="text" class="form-control rounded-pill" placeholder="Name*" aria-describedby="name">
+              </div>
             </div>
-            <div class="form-group question-input">
-              <input type="email" class="form-control form-control-sm" placeholder="Email*" aria-describedby="name">
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="form-group question-input">
+                <input type="email" class="form-control rounded-pill" placeholder="Email*" aria-describedby="name">
+              </div>
             </div>
-            <div class="form-group question-input">
-              <input type="number" class="form-control form-control-sm" placeholder="Phone*" aria-describedby="name">
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="form-group question-input">
+                <input type="number" class="form-control rounded-pill" placeholder="Phone*" aria-describedby="name">
+              </div>
             </div>
-            <div class="form-group question-textarea">
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+            <div class="col-12">
+              <div class="form-group question-textarea">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="3"></textarea>
+              </div>
             </div>
-            <button type="submit" class="btn">submit</button>
-          </form>
-        </div>
+            <div class="col-12">
+              <button type="submit" class="btn">submit</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 
 
-  <!-- content -->
+  <!-- Aboout us -->
   <div class="container-fluid about">
     <div class="container">
       <div class="row content-about">
@@ -176,8 +219,7 @@
       <h2 class="project-heading text-center mb-5">Our Projects</h2>
       <div class="row ">
         <div class="col-12 col-lg-6 order-lg-1 order-2 my-auto">
-          <h6 class="project-title">kalrav Residency</h6>
-          <p class="project-text">20/05/2020</p>
+          <h6 class="project-title">Kalrav Residency</h6>
           <p class="project-text mb-5">Our current projectKalrav residency is in India’s first green filed smart
             city
             Dholera SIR. Kalarav
@@ -188,14 +230,13 @@
           </div>
         </div>
         <div class="col-12 col-lg-6 text-center order-lg-2 order-1 mb-4 mb-lg-0">
-          <img src="./assets/homePageImage/project_1.jpg" class='img-fluid kairav-img' alt="">
+          <img src="./assets/homePageImage/project_1.jpg" class='kairav-img' height="100%" width="100%" alt="project 1">
         </div>
         <div class="col-12 col-lg-6 text-center order-3 order-lg-3 my-4 my-lg-0">
-          <img src="./assets/homePageImage/project_2.jpg" class='img-fluid sunvila-img' alt="">
+          <img src="./assets/homePageImage/project_2.jpg" class='sunvila-img' height="451" width="100%" alt="project 2">
         </div>
         <div class="col-12 col-lg-6 mt-4 order-4 order-lg-4 my-auto">
           <h6 class="project-title">Sunrise Villa</h6>
-          <p class="project-text">20/05/2020</p>
           <p class="project-text mb-5">We Successfully Completed Sunrise Villa Project at India’s First Green field
             Smart City Dholera Sir. ‘Sunrise Villa’ Is Located on Pipli to Fedra Four Track Road. We have finished
             Registration Process of all Our Clients’Properties in this Project. </p>
@@ -207,21 +248,21 @@
 
   <!-- our client -->
   <div class="container client">
-    <h1 class="client-title">From Great our clients</h1>
+    <h1 class="client-title">From Great Our Clients</h1>
     <!-- swiper -->
     <!-- Slider main container -->
-    <div class="swiper-container">
+    <div class="swiper-container client-swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
           <div class="card shadow">
             <div class="card-body">
-              <div class="avatar shadow">
+              <div class="avatar">
                 <img src="./assets/testimonial/4- mehulbhai savaliya-rajkot.JPG" class="img-fluid" alt="">
               </div>
               <div class="client-comment">
-                <h6>Mehul Savaliya</h6>
+                <h6 class="client-name">Mehul Savaliya</h6>
                 <p>One fine day got to know about Skyzen Developers and its Project which is in Dholera Sir.
                   Considering
                   Good location at better price for investment I opted it.</p>
@@ -232,11 +273,11 @@
         <div class="swiper-slide">
           <div class="card shadow">
             <div class="card-body">
-              <div class="avatar shadow">
+              <div class="avatar">
                 <img src="./assets/testimonial/1- poonamben samtani- bhavnagar.jpg" class="img-fluid" alt="">
               </div>
               <div class="client-comment">
-                <h6>Elisabeth Enderson</h6>
+                <h6 class="client-name">Elisabeth Enderson</h6>
                 <p>One fine day got to know about Skyzen Developers and its Project which is in Dholera Sir.
                   Considering
                   Good location at better price for investment I opted it.</p>
@@ -247,11 +288,11 @@
         <div class="swiper-slide">
           <div class="card shadow">
             <div class="card-body">
-              <div class="avatar shadow">
+              <div class="avatar">
                 <img src="./assets/testimonial/4- mehulbhai savaliya-rajkot.JPG" class="img-fluid" alt="">
               </div>
               <div class="client-comment">
-                <h6>Mehul Savaliya</h6>
+                <h6 class="client-name">Mehul Savaliya</h6>
                 <p>One fine day got to know about Skyzen Developers and its Project which is in Dholera Sir.
                   Considering
                   Good location at better price for investment I opted it.</p>
@@ -259,17 +300,13 @@
             </div>
           </div>
         </div>
-        ...
       </div>
       <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
 
       <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
   </div>
 
@@ -278,25 +315,27 @@
     <div class="container">
       <div class="section ">
         <!-- <div class="blog-background"></div> -->
-        <h3 class="blog-title text-center position-relative">LATEST BLOG</h3>
-        <div class="row text-center">
+        <h3 class="blog-heading text-center position-relative">LATEST BLOG</h3>
+        <div class="row">
           <div class="col-12 col-lg-4">
-            <div class="blog-card rounded bg-white p-4 border border-primary">
-              <p><i class='bx bx-calendar'></i> Jan 26 2020</p>
-              <h3><strong>Career Opportunity in real estate sector</strong></h3>
-              <p>Real estate sector is an excellent fiels for them, Who intended to build the career in the
-                field.
-                It
-                provide Opportunity of unlimited earning ungeatable It
-                provide Opportunity of unlimited earning ungeatable...</p>
-              <button class="btn text-primary">Continue <i class='bx bxs-chevron-right'></i></button>
+            <div class="card blog-card theme-border-color">
+              <div class="card-body">
+                <p class="blog-date"><i class='bx bx-calendar'></i> Jan 26 2020</p>
+                <h3 class="blog-title">Career opportunity in real estate sector</h3>
+                <p class="blog-desc text-ellipsis">
+                  Real estate sector is an excellent fiels for them, Who intended to build the career in the
+                  field. It provide Opportunity of unlimited earning ungeatable It provide Opportunity of unlimited
+                  earning ungeatable
+                </p>
+                <a href="#" class="theme-text">Continue <i class='bx bxs-chevron-right'></i></a>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0">
             <img class="blog-card img-fluid" src="./assets/blog-house/blog-house-1.png" alt="">
           </div>
-          <div class="col-12 col-lg-4 rounded">
-            <img src="./assets/blog-house/blog-house-2.png" class="blog-card img-fluid" alt="">
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+            <img src="./assets/blog-house/house-1.jpg" class="blog-card img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -305,77 +344,85 @@
 
   <!-- gallery -->
   <div class="container">
-    <div class="our-gallery-section mt-5">
-      <h3 class="text-center">OUR GALLERY</h3>
+    <div class="gallery">
+      <h3 class="gallery-title text-center">OUR GALLERY</h3>
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <img class="p-3 gallery-image img-fluid " src="./assets/gallery/gallery 1.jpg" height="301" width="585"
-                alt="">
+            <div class="col-12 col-lg-6 mb-4">
+              <img src="./assets/gallery/gallery_1.jpg" class="gallery-image" height="100%" width="100%" alt="">
             </div>
-            <div class="col-md-3 col-6">
-              <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 2.jpg" height="301" width="279"
-                alt="">
+            <div class="col-lg-3 col-6 mb-4">
+              <img src="./assets/gallery/gallery_2.jpg" class="gallery-image" height="100%" width="100%" alt="">
             </div>
-            <div class="col-md-3 col-6">
-              <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 3.jpg" height="301" width="279"
-                alt="">
+            <div class="col-lg-3 col-6 mb-4">
+              <img src="./assets/gallery/gallery_3.jpg" class="gallery-image" height="100%" width="100%" alt="">
             </div>
           </div>
         </div>
         <div class="col-12">
           <div class="row">
-            <div class="col-md-3 col-6">
-              <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 4.jpg" height="301" width="279"
-                alt="">
+            <div class="col-lg-3 col-6 mb-4">
+              <img src="./assets/gallery/gallery_4.jpg" class="gallery-image" height="100%" width="100%" alt="">
             </div>
-            <div class="col-md-3 col-6">
-              <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 5.jpg" height="301" width="279"
-                alt="">
+            <div class="col-lg-3 col-6 mb-4">
+              <img src="./assets/gallery/gallery_5.jpg" class="gallery-image" height="100%" width="100%" alt="">
             </div>
-            <div class="col-md-6 col-12">
-              <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 6.jpg" height="301" width="585"
-                alt="">
+            <div class="col-lg-6 col-12 mb-4">
+              <img src="./assets/gallery/gallery_6.jpg" class="gallery-image" height="100%" width="100%" alt="">
             </div>
           </div>
         </div>
         <div id="load-images-here" class="load-images-here"></div>
         <div class="col-12 text-center">
-          <button class="btn btn-theme view-other mt-3 mb-5" onclick="load()">VIEW OTHER</button>
+          <button id="loadMore" class="btn btn-theme view-other mt-3 mb-5">VIEW OTHER</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- map -->
+  <!-- map and contact-->
   <div class="container-fluid map-bg">
     <div class="container h-100">
-      <div class="contact-us-section">
+      <div class="contact-us">
         <div class="row p-4">
           <div class="col-12 col-lg-6">
-            <div class="shadow p-1" style="width: 100%">
-              <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                href="https://www.maps.ie/route-planner.htm">Driving Route Planner</a></div>
+            <iframe class="shadow"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7997.600434402135!2d10.757409430595589!3d59.92550277249469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6e4827b671%3A0xc7d98787d5beaaf0!2sAlexander%20Kiellands%20plass!5e0!3m2!1sen!2sin!4v1608401875637!5m2!1sen!2sin"
+              width="100%" height="500" frameborder="0" style="border:0; border-radius: 6px;" allowfullscreen=""
+              aria-hidden="false" tabindex="0"></iframe>
           </div>
           <div class="col-12 col-lg-6 mt-4">
+            <h5 class="contact-us-title mb-4">Contact us</h5>
 
-            <h5>CONTACT US</h5>
-            <P><i class='bx bx-right-arrow'></i> +91 85 11 11 57 20</P>
-            <P><i class='bx bx-right-arrow'></i> infoskyzengroup@gmail.com</P>
-            <P class="pl-3">101, Eva Complex, 1st Floor,
-              Opp. Gulistan Ground,
-              WaghaWadi Road, Bhavnagar </P>
+            <P class="contact-phone">
+              <i class='bx bxs-phone mr-1'></i>
+              <span>+91 85 11 11 57 20</span>
+            </P>
+            <P class="contact-mail">
+              <i class='bx bx-mail-send mr-1'></i>
+              <span>infoskyzengroup@gmail.com</span>
+            </P>
+            <P class="contact-address">
+              <i class='bx bxs-map mr-1'></i>
+              <span>101, Eva Complex, 1st Floor, Opp. Gulistan Ground, WaghaWadi Road, Bhavnagar</span>
+            </P>
 
-            <hr>
-            <p><i class='bx bx-right-arrow'></i> +91 91 04 05 06 24</p>
-            <P><i class='bx bx-right-arrow'></i> infoskyzengroup@gmail.com</P>
+            <hr class="divider">
 
-            <p class="pl-3">270 Exult shoppers, 2nd floor
-              Nr. Siddhivinayak Ganpati Temple,
-              Vesu Main road Surat, 395007.</p>
+            <p class="contact-phone">
+              <i class='bx bxs-phone mr-1'></i>
+              <span>+91 91 04 05 06 24</span>
+            </p>
+            <P class="contact-mail">
+              <i class='bx bx-mail-send mr-1'></i>
+              <span>infoskyzengroup@gmail.com</span>
+            </P>
 
+            <p class="contact-mail">
+              <i class='bx bxs-map mr-1'></i>
+              <span>270 Exult shoppers, 2nd floor Nr. Siddhivinayak Ganpati Temple, Vesu Main road Surat, 395007.</span>
+            </p>
           </div>
         </div>
       </div>
@@ -384,20 +431,21 @@
 
   <!-- footer -->
   <div class="container">
-    <div class="footer-section">
+    <div class="footer-section pt-4">
       <div class="row">
-        <div class="col-3">
-          <img src="./assets/ei_1594724452197-removebg.png" width="180" alt="">
+        <div class="col-6 col-lg-5 col-md-4">
+          <img src="./assets/skyzen_developers.jpg" width="180" alt="">
         </div>
-        <div class="col-9 d-flex align-items-center flex-column flex-md-row justify-content-end">
-          <span class="pr-3">Home</span>
-          <span class="pr-3">About us</span>
-          <span class="pr-3">Our Projects</span>
-          <span class="pr-3">Dholera SIR</span>
-          <span class="pr-3">NRI</span>
-          <span class="pr-3">News</span>
-          <span class="pr-3">Career</span>
-
+        <div class="col-6 col-lg-7 col-md-8  d-flex align-items-center justify-content-center">
+          <div class="row flex-column flex-md-row text-center">
+            <div class="col text-nowrap"><a class="footer-link" href="#">Home</a></div>
+            <div class="col text-nowrap"><a class="footer-link" href="#">About us</a></div>
+            <div class="col text-nowrap"><a class="footer-link" href="#">Our Projects</a></div>
+            <div class="col text-nowrap"><a class="footer-link" href="#">Dholera SIR</a></div>
+            <div class="col text-nowrap"><a class="footer-link" href="#">NRI</a></div>
+            <div class="col text-nowrap"><a class="footer-link" href="#">News</a></div>
+            <div class="col text-nowrap"><a class="footer-link" href="#">Career</a></div>
+          </div>
         </div>
       </div>
       <hr>
@@ -414,11 +462,23 @@
       </div>
     </div>
   </div>
+
+  <!-- chat boat -->
+  <div id="chat-button" class="chat-toggler shadow-lg p-3">
+    <img src="./assets/social-icons/chat-bg.png" class="img-fluid" alt="chat img">
+  </div>
+  <div class="card chat-box shadow-lg d-none">
+    <div class="card-header">
+      <h4 class="card-title">How Can I Help You??</h4>
+    </div>
+    <div class="card-body">
+      <!-- your content goes here. -->
+    </div>
+  </div>
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="./bootstrap/js/jquery-3.5.1.slim.min.js"></script>
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
 

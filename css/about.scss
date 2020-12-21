@@ -1,0 +1,357 @@
+.about-banner {
+  height: 301px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background: url(../assets/about_us/banner_about.png);
+  position: relative;
+  margin-bottom: 161px;
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #200303;
+    opacity: 0.7;
+    z-index: 0;
+  }
+
+  .banner-text {
+    z-index: 5;
+    color: #fff;
+    font-size: 55px;
+    font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  }
+
+}
+
+.about-title {
+  font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+.about-desc {
+  color: #202020;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.singature {
+  font-size: 22px;
+  color: #202020;
+
+  +small {
+    font-size: 18px;
+    color: #202020;
+    opacity: 0.6;
+  }
+}
+
+.experiance-banner {
+  height: 301px;
+  background-color: #3BC2FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  h1 {
+    font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-size: 40px;
+    color: #fff;
+
+    .year {
+      font-size: 68px;
+    }
+  }
+}
+
+// choose us
+.choose-us {
+  margin-top: 124px;
+
+  .choose-us-heading {
+    font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-size: 40px;
+  }
+
+  // card
+  .choose-card {
+    margin: 2rem;
+    border-radius: 8px;
+    position: relative;
+
+    .card-body {
+      padding-left: 55px;
+    }
+
+    .choose-title {
+      font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+      position: relative;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 1rem;
+
+      &:hover,
+      &:active,
+      &:focus {
+
+        &::after {
+          width: 90%;
+          left: 5%;
+          transition: 0.5s ease all;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        height: 2px !important;
+        width: 40%;
+        left: 30%;
+        background-color: #000;
+        opacity: 0.5;
+        transition: 0.4s ease-out all .1s;
+      }
+    }
+
+    .choose-desc {
+      opacity: 0.8;
+      font-size: 18px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 2px solid transparent;
+      border-radius: 8px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 2px solid transparent;
+      border-radius: 8px;
+    }
+
+    &:hover {
+      .choose-number {
+        background-color: #67CEFD;
+        transition: all 0.5s;
+
+        span {
+          color: #fff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .choose-card:hover::before {
+    animation: animate 1s linear forwards;
+  }
+
+  .choose-card:hover::after {
+    animation: animates 1s linear forwards;
+  }
+
+  // number
+  .choose-number {
+    height: 81px;
+    width: 81px;
+    position: absolute;
+    left: -37px;
+    bottom: 33%;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 2;
+
+    span {
+      font-size: 30px;
+      opacity: 0.5;
+      font-family: 'Roboto-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    }
+  }
+}
+
+// our mission
+.our-mission {
+  padding: 70px;
+  background-color: rgba(#3BC2FF, 0.1);
+
+  .mission-heading {
+    font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-size: 40px;
+    margin-bottom: 66px;
+  }
+
+  .mission-title {
+    font-size: 24px;
+    font-family: 'Montserrat-SemiBold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    margin-bottom: 40px;
+  }
+
+  .mission-desc {
+    font-size: 18px;
+    color: rgba($color: #000000, $alpha: 0.8);
+  }
+}
+
+// our vision
+.our-vision {
+  margin-top: 117px;
+
+  .vision-heading {
+    font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-size: 40px;
+    margin-bottom: 66px;
+  }
+
+  .mission-title {
+    font-size: 24px;
+    font-family: 'Montserrat-SemiBold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    margin-bottom: 40px;
+  }
+
+  .mission-desc {
+    font-size: 18px;
+    color: rgba($color: #000000, $alpha:0.6);
+  }
+}
+
+// teams
+.teams {
+  margin-top: 125px;
+
+  .teams-heading {
+    margin-bottom: 69px;
+    font-family: 'Montserrat-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+  }
+
+  .teams-card {
+    overflow: hidden;
+  }
+
+  .team-description {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -23px;
+    right: 0;
+    width: 90%;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h4 {
+      font-family: 'Montserrat-SemiBold';
+      font-size: 30px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: 'Montserrat-SemiBold';
+      color: #fff;
+    }
+
+    .social-links {
+      a {
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+      transition-duration: .5s;
+      transition-timing-function: ease-out;
+      transform: translate3d(12px, 0px, 0px);
+      background-color: rgba($color: #3BC2FF, $alpha: 0.5);
+    }
+  }
+}
+
+
+//------------ Animation ------------------//
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #67CEFD;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #67CEFD;
+    border-right-color: #67CEFD;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #67CEFD;
+    border-right-color: #67CEFD;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@keyframes animates {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #67CEFD;
+  }
+
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #67CEFD;
+    border-left-color: #67CEFD;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #67CEFD;
+    border-left-color: #67CEFD;
+  }
+}

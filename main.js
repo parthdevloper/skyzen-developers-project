@@ -1,76 +1,105 @@
-function load() {
-   console.log('loaded');
-   document.getElementById("load-images-here").innerHTML = `<div class="col-12">
+$(function () {
+
+   // gallery img load
+   $('#loadMore').on('click', function () {
+      $(".load-images-here").html(`<div class="col-12">
    <div class="row">
-      <div class="col-12 col-md-6">
-         <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 1.jpg" height="301" width="585"
-            alt="">
-
+      <div class="col-12">
+         <div class="row">
+         <div class="col-12 col-lg-6 mb-4">
+            <img src="./assets/gallery/gallery_1.jpg" class="gallery-image" height="100%" width="100%" alt="">
+         </div>
+         <div class="col-lg-3 col-6 mb-4">
+            <img src="./assets/gallery/gallery_2.jpg" class="gallery-image" height="100%" width="100%" alt="">
+         </div>
+         <div class="col-lg-3 col-6 mb-4">
+            <img src="./assets/gallery/gallery_3.jpg" class="gallery-image" height="100%" width="100%" alt="">
+         </div>
+         </div>
       </div>
-      <div class="col-md-3 col-6">
-         <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 2.jpg" height="301" width="279"
-            alt="">
-
-      </div>
-      <div class="col-md-3 col-6">
-         <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 3.jpg" height="301" width="279"
-            alt="">
-
+      <div class="col-12">
+         <div class="row">
+         <div class="col-lg-3 col-6 mb-4">
+            <img src="./assets/gallery/gallery_4.jpg" class="gallery-image" height="100%" width="100%" alt="">
+         </div>
+         <div class="col-lg-3 col-6 mb-4">
+            <img src="./assets/gallery/gallery_5.jpg" class="gallery-image" height="100%" width="100%" alt="">
+         </div>
+         <div class="col-lg-6 col-12 mb-4">
+            <img src="./assets/gallery/gallery_6.jpg" class="gallery-image" height="100%" width="100%" alt="">
+         </div>
+         </div>
       </div>
    </div>
+</div>`);
+   })
 
-</div>
-<div class="col-12">
-   <div class="row">
-
-      <div class="col-md-3 col-6">
-         <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 4.jpg" height="301" width="279"
-            alt="">
-
-      </div>
-      <div class="col-md-3 col-6">
-         <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 5.jpg" height="301" width="279"
-            alt="">
-
-      </div>
-      <div class="col-12 col-md-6">
-         <img class="p-3 gallery-image img-fluid" src="./assets/gallery/gallery 6.jpg" height="301" width="585"
-            alt="">
-
-      </div>
-   </div>
-</div>`;
-}
-
-var mySwiper = new Swiper('.swiper-container', {
-   // Optional parameters
-   direction: 'horizontal',
-   loop: true,
-   slidesPerView: 2,
-   spaceBetween: 30,
-   // If we need pagination
-   pagination: {
-      el: '.swiper-pagination',
-   },
-
-   // Navigation arrows
-   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-   },
-
-   // And if we need scrollbar
-   scrollbar: {
-      el: '.swiper-scrollbar',
-   },
-   breakpoints: {
-      780: {
-         slidesPerView: 2,
-         spaceBetween: 30
+   // swiper
+   var clientSwiper = new Swiper('.client-swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      // If we need pagination
+      pagination: {
+         el: '.swiper-pagination',
       },
-      300: {
-         slidesPerView: 1,
-         spaceBetween: 10
+
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+         el: '.swiper-scrollbar',
+      },
+      breakpoints: {
+         780: {
+            slidesPerView: 2,
+            spaceBetween: 10
+         },
+         200: {
+            slidesPerView: 1,
+            spaceBetween: 0
+         }
       }
-   }
-})
+   })
+
+   // swiper
+   var welcomeSwiper = new Swiper('.welcome-swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      // If we need pagination
+      pagination: {
+         el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+         el: '.swiper-scrollbar',
+      },
+   })
+
+
+   $('#chat-button').on('click', function () {
+      if ($('.chat-box').hasClass('d-none')) {
+         $('.chat-box').removeClass('d-none')
+      }
+      else {
+         $('.chat-box').addClass('d-none')
+      }
+   })
+});
+
